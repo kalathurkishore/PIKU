@@ -13,5 +13,19 @@ Installing the required packages by
 pip3 install -r requirements.txt
 ```
 Acquire Gurobi license
-
-For reproducing the results run 
+```
+https://www.gurobi.com/downloads/free-academic-license/
+```
+For reproducing the results run `Markov_Approach` as shown below
+```
+python3 Markov_Approach.py
+```
+For reproducing the results run `Neural_Network_Approach` as shown below
+```
+python3 Neural_Network_Approach.py
+```
+For reproducing the results run `Decision_Focused_Learning_Approach` as shown below
+```
+python3 Decision_Focused_Learning_Approach.py
+```
+For reproducing the plots run `VRPSPD_Capacitated_plotting` accordingly based on required capacity where values were obtained from `SPD`
