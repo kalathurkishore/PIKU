@@ -28,4 +28,4 @@ For reproducing the results run `Decision_Focused_Learning_Approach` as shown be
 ```
 python3 Decision_Focused_Learning_Approach.py
 ```
-For reproducing the plots run `VRPSPD_Capacitated_plotting` accordingly based on required capacity where values were obtained from `SPD`
+For reproducing the plots run `VRPSPD_Capacitated_plotting` accordingly based on required capacity where values were obtained from `SPD.py`
