@@ -32,9 +32,9 @@ python3 Decision_Focused_Learning_Approach.py
 ```
 For reproducing the plots run `VRPSPD_Capacitated_plotting` accordingly based on required capacity where values were obtained from `SPD.py`
 
-In Figures folder corresponding figures for the stops are provided. Here, the corresponding routes info for the respective vehicle is provided.
+In `Figures` folder corresponding figures for the stops are provided. Here, the corresponding routes info for the respective vehicle is provided.
 
-For 74-stops 
+For `74-stops` 
 ```
 74 stops 50000 capacity
 
@@ -56,7 +56,7 @@ Vehicle-3: [0, 11, 14, 17, 20, 23, 24, 25, 26, 29, 35, 36, 37, 45, 46, 56, 68, 7
 Vehicle-4: [0, 2, 7, 13, 27, 39, 41, 42, 43, 51, 52, 62, 73]
 Vehicle-5: [0, 4, 15, 16, 18, 21, 32, 33, 47, 48, 49, 53, 60, 63, 66, 67, 69, 70, 71]
 ```
-For 150-stops
+For `150-stops`
 ```
 150 stops 50000 capacity
 
@@ -86,8 +86,7 @@ Vehicle-7: [0, 9, 19, 49, 62, 97, 109, 116, 118, 128]
 Vehicle-8: [0, 3, 16, 24, 26, 35, 42, 47, 50, 56, 57, 68, 71, 81, 86, 92, 99, 129, 135, 144]
 Vehicle-9: [0, 22, 28, 30, 34, 44, 53, 55, 64, 72, 91, 104, 110, 113, 117, 125, 127, 130, 143, 145]
 ```
-For 200 stops
-
+For `200 stops`
 ```
 200 stops 50000 capacity
 
