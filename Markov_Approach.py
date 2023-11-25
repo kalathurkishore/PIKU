@@ -16,7 +16,7 @@ logging.basicConfig(filename='EvaluationAdditiveModels.log', level=logging.INFO,
 
 # load data
 if __name__ == "__main__":
-    npzfile = np.load("/DATA/anonymous/CVRP2D/data/daily_stops_data.npz",allow_pickle=True,)
+    npzfile = np.load("/DATA/anonymous/PIKU/data/daily_stops_data.npz",allow_pickle=True,)
     stops = npzfile['stops_list'] # 201 length list indicating which stops are active for each day
     #print(stops)
     n_vehicles= npzfile['nr_vehicles'] # n_vehicles for each day
@@ -24,14 +24,14 @@ if __name__ == "__main__":
     capacities = npzfile['capacities_list']# vehicle capacity
     demands = npzfile['demands_list'] # demands of each active stops
     #print(demands)
-    pickups = np.load("/DATA/anonymous/CVRP2D/data/pickup_list_data.npy")  # pickups at each active stops
-    #demands = np.load("/DATA/anonymous/CVRP2D/data/pickup_demand_list_data.npy")
+    pickups = np.load("/DATA/anonymous/PIKU/data/pickup_list_data.npy")  # pickups at each active stops
+    #demands = np.load("/DATA/anonymous/PIKU/data/pickup_demand_list_data.npy")
     npzfile = np.load("/DATA/anonymous/CVRP-DP/Data-Driven-VRP/data/daily_routematrix_data.npz", allow_pickle=True)
     opmat = npzfile['incidence_matrices'] # solutions for each day as an incidence matrix
     stop_wise_days = npzfile['stop_wise_active'] 
-    distance_mat = np.load("/DATA/anonymous/CVRP2D/data/Distancematrix.npy")
+    distance_mat = np.load("/DATA/anonymous/PIKU/data/Distancematrix.npy")
     #print(distance_mat)
-    edge_mat = np.load("/DATA/anonymous/CVRP2D/data/edge_category_data.npy")
+    edge_mat = np.load("/DATA/anonymous/PIKU/data/edge_category_data.npy")
 
     
     smoothing,exp = 0.1,0.7

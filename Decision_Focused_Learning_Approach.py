@@ -15,18 +15,18 @@ formatter = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 logging.basicConfig(filename='PredictOptimize.log', 
 level=logging.INFO,format=formatter)
 
-npzfile = np.load("/DATA/anonymous/CVRP2D/data/daily_stops_data.npz",allow_pickle=True,)
+npzfile = np.load("/DATA/anonymous/PIKU/data/daily_stops_data.npz",allow_pickle=True,)
 stops = npzfile['stops_list'] # 201 length list indicating which stops are active for each day
 n_vehicles= npzfile['nr_vehicles'] # n_vehicles for each day
 weekday= npzfile['weekday'] # categorical input
 capacities = npzfile['capacities_list']# vehicle capacity
 demands = npzfile['demands_list'] # demands of each active stops
-pickups = np.load("/DATA/anonymous/CVRP2D/data/pickup_list_data.npy")  # pickups at each active stops
+pickups = np.load("/DATA/anonymous/PIKU/data/pickup_list_data.npy")  # pickups at each active stops
 npzfile = np.load("/DATA/anonymous/CVRP-DP/Data-Driven-VRP/data/daily_routematrix_data.npz", allow_pickle=True)
 opmat = npzfile['incidence_matrices'] # solutions for each day as an incidence matrix
 stop_wise_days = npzfile['stop_wise_active'] 
-distance_mat = np.load("/DATA/anonymous/CVRP2D/data/Distancematrix.npy")
-edge_mat = np.load("/DATA/anonymous/CVRP2D/data/edge_category_data.npy")
+distance_mat = np.load("/DATA/anonymous/PIKU/data/Distancematrix.npy")
+edge_mat = np.load("/DATA/anonymous/PIKU/data/edge_category_data.npy")
 
 
 test_days = [

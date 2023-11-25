@@ -50,7 +50,7 @@ def VRPGurobi(cst_matrix,qcapacity,qpickups,Q,n_vehicles,activeindices, relaxed=
         XRP.append(XRPRow)
         R.append(RRow)
         P.append(PRow)
-    #########
+    ##########
     x = M.addMVar((n,n), vtype=GRB.BINARY) #creates a matrix 'x' of binary variables(0 or 1)
     u = M.addMVar(n,ub=Q, vtype=GRB.CONTINUOUS) #creates a continuous variable vector named "u"
     '''

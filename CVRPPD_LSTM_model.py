@@ -1607,7 +1607,7 @@ class MarkovNoPast(MarkovConjunctionpred3):
         else:
             return f.normalize(m(x_).masked_fill(x_mask.bool(),0), p=1, dim=1)
 
-##### Expnetial Smoothing in Neural Net models
+###### Expnetial Smoothing in Neural Net models
 
 class MarkovConjunctionpred4Smoother(MarkovConjunctionpred4):
     def __init__(self, embedding_size,

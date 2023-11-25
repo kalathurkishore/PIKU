@@ -36,7 +36,7 @@ class TwoStageVRP:
         activeindices = stops_list[-1]
         act = trgt[-1,:,:] 
 
-        ###
+        ####
         proba_mat = np.zeros((74,74))
         self.training_loss = 0
         for test_stop in activeindices:

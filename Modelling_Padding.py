@@ -84,7 +84,7 @@ class TwoStageVRP_padding:
         criterion = nn.BCELoss() 
 
 
-        ###
+        ####
         proba_mat = np.zeros((74,74))
         self.training_loss =0
         training_loss = []

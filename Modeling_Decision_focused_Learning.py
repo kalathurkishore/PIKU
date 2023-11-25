@@ -155,7 +155,7 @@ class PredictOptimzeVRP:
         training_loss = []
 
         for ep in range(self.epochs):
-            print("####",ep +1, "Epoch started #######",)
+            print("#####",ep +1, "Epoch started #######",)
 
             pred_dict ={}
             self.total_ad = 0
